@@ -374,6 +374,9 @@ pub type __locale_t = *mut Struct___locale_struct;
 pub type locale_t = __locale_t;
 pub type __jmp_buf = [::libc::c_long, ..8u];
 pub type Enum_Unnamed15 = ::libc::c_uint;
+
+pub const XCB_COPY_FROM_PARENT: ::libc::c_long = 0;
+
 pub const PTHREAD_CREATE_JOINABLE: ::libc::c_uint = 0;
 pub const PTHREAD_CREATE_DETACHED: ::libc::c_uint = 1;
 pub type Enum_Unnamed16 = ::libc::c_uint;
