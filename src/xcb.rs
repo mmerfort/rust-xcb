@@ -3803,6 +3803,7 @@ pub enum Struct_xcb_special_event { }
 pub type xcb_special_event_t = Struct_xcb_special_event;
 pub enum Struct_xcb_extension_t { }
 pub type xcb_extension_t = Struct_xcb_extension_t;
+#[link(name = "xcb")]
 extern "C" {
     pub static mut __tzname: [*mut ::libc::c_char, ..2u];
     pub static mut __daylight: ::libc::c_int;
@@ -3810,8 +3811,6 @@ extern "C" {
     pub static mut tzname: [*mut ::libc::c_char, ..2u];
     pub static mut daylight: ::libc::c_int;
     pub static mut timezone: ::libc::c_long;
-}
-extern "C" {
     pub fn select(__nfds: ::libc::c_int, __readfds: *mut fd_set,
                   __writefds: *mut fd_set, __exceptfds: *mut fd_set,
                   __timeout: *mut Struct_timeval) -> ::libc::c_int;
