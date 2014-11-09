@@ -376,6 +376,7 @@ pub type __jmp_buf = [::libc::c_long, ..8u];
 pub type Enum_Unnamed15 = ::libc::c_uint;
 
 pub const XCB_COPY_FROM_PARENT: ::libc::c_long = 0;
+pub const XCB_EXPOSE: ::libc::c_uint = 12;
 
 pub const PTHREAD_CREATE_JOINABLE: ::libc::c_uint = 0;
 pub const PTHREAD_CREATE_DETACHED: ::libc::c_uint = 1;
